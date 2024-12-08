@@ -32,4 +32,8 @@ public class AlbumService {
 
     return repository.saveAndFlush(entity);
   }
+
+  public void delete(Integer id) {
+    repository.deleteById(id);
+  }
 }
